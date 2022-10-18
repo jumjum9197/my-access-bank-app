@@ -25,9 +25,7 @@ submitBtn?.addEventListener("click", () => {
   };
 
 
-  // if(reg_data.Password !==reg_data.CPassword){
-  //   alert("password not match")
-  // }else
+ 
  if(reg_data.deposit >=500 ){
   
     const data = JSON.parse(localStorage.getItem("Users"));
