@@ -51,7 +51,7 @@ submitBtn?.addEventListener("click", () => {
       allUsers.push(reg_data);
       allUsers=JSON.stringify(allUsers);
       localStorage.setItem("all_Users_data",allUsers);
-      location.assign('/login.html')
+      location.assign("dashboard.html")
       
   
     }
