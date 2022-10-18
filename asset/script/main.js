@@ -19,14 +19,15 @@ submitBtn?.addEventListener("click", () => {
     deposit: document.getElementById("deposit").value,
     dob: document.getElementById("dob").value,
     Password: document.getElementById("Password").value,
+    CPassword: document.getElementById("CPassword").value,
  
   
   };
 
 
-  if(reg_data.Password !==reg_data.CPassword){
-    alert("password not match")
-  }else
+  // if(reg_data.Password !==reg_data.CPassword){
+  //   alert("password not match")
+  // }else
  if(reg_data.deposit >=500 ){
   
     const data = JSON.parse(localStorage.getItem("Users"));
