@@ -83,9 +83,13 @@ loginBtn?.addEventListener("click",()=>{
   })
   if (result.length !==0){
     let currentUser=result
+  
     localStorage.setItem("current_session",JSON.stringify(currentUser))
-  }else{
+    location.assign("dashboard.html")
+  }
+  else{
     alert("email invalid or password invalid")
+   
   }
 })
 
